@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登陆界面</title>
+    <link type="text/css" href="regin.css" rel="stylesheet">
+</head>
+<body>
+<div class="shadow">
+    <div class="front">
+        <h2>—————登录————-</h2>
+        <div class="account"><input placeholder="请输入用户名" id="racc"></div>
+        <div class="password"><input type="password" placeholder="请输入密码" id="rpass"></div>
+        <div class="style regin">登陆</div>
+        <div class="style signup">注册</div>
+       </div>
+    <div class="back">
+        <h2>-—————注册——————</h2>
+        <div class="signaccount"><p>请输入用户名:</p><input class="frame" id="acc1"></div>
+        <div class="signpassword"><p>请输入密码:</p><input class="frame" id="pass1"></div>
+        <div class="signpassword"><p>请再次输入密码:</p><input class="frame" id="pass2">
+        <p class="error">两次输入不一致</p></div>
+        <div class="signselect"><p>请选择性别:</p><label><input type="radio" name="gender" checked> 男</label><label><input type="radio" name="gender"> 女</label></div>
+        <div class="confirm">确认</div>
+    </div>
+    <div id="alert"></div>
+</div>
+<script src="regin.js"></script>
+</body>
+</html>

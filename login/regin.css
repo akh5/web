@@ -1,0 +1,152 @@
+body{
+    background-image: url("./img/1.jpg");
+
+}
+.shadow{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,);
+}
+.front{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 8px;
+    background-color: rgba(255,255,255,.6);
+    transition: all 1.5s ease-out;
+}
+h2{
+    position: relative;
+    margin-top: 0;
+    top: 1px;
+}
+
+.front input{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    height: 30px;
+    width: 250px;
+    border-radius: 5px;
+    border-color: #00bcbc;
+    background-color: rgba(0,150,150,0.3);
+}
+.style{
+    width: 90px;
+    height:40px;
+    padding: 0;
+    position: absolute;
+    border: black solid 1px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 35px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 1s all ease;
+}
+.style::before{
+    background-color: rgba(50,0,255,1);
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    transition: all 0.6s ease;
+}
+.regin{
+    left: 22px;
+    top: 230px;
+}
+.regin::before{
+    width: 0;
+    height: 100%;
+}
+.regin:hover::before{
+    width: 100%;
+}
+.signup{
+    left: 181px;
+    top: 230px;
+}
+.signup::before{
+    width: 0;
+    height: 100%;
+}
+.signup:hover::before{
+    width: 100%;
+}
+.back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 350px;
+    height: 550px;
+    background-color: rgba(255,255,255,0.6);
+    border-radius: 8px;
+    display: none;
+    transition: all 1.5s ease-in;
+}
+.back .frame{
+    position: relative;
+    left: 10px;
+    width: 300px;
+    height: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 6px;
+    border-color: #443f8b;
+}
+.back .confirm{
+    left: 11px;
+    top: 50px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    width: 300px;
+    height: 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: black solid 1px;
+    transition: background-color 1s ease;
+}
+.back .confirm:hover{
+    background-color: greenyellow;
+}
+.back .error{
+    position: relative;
+    left: 15px;
+    color: red;
+    margin: 0;
+    display: none;
+}
+
+#alert{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    width: 650px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: rgba(0,0,255,0.8);
+    color: white;
+    line-height: 38px;
+    display: none;
+}
